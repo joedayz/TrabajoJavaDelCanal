@@ -1,4 +1,4 @@
-package pe.joedayz.models;
+package pe.joedayz.supermercado.models;
 
 public abstract class Persona {
 

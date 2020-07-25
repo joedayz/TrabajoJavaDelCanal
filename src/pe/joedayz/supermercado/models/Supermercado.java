@@ -1,4 +1,4 @@
-package pe.joedayz.models;
+package pe.joedayz.supermercado.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,5 +67,8 @@ public class Supermercado {
 			}
 		}
 		return rpta;
+	}
+
+	public void mostrarProductos() {
 	}
 }

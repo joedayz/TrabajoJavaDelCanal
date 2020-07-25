@@ -1,16 +1,18 @@
-package pe.joedayz.models;
+package pe.joedayz.supermercado.models;
 
 import java.util.Scanner;
 
-public class Vendedor extends Persona{
+public class Cliente extends Persona{
 
-	private String codVendedor;
+	private String tarjetaBonus;
 
 	@Override
 	public void mostrarDatos() {
 		super.mostrarDatos();
-		System.out.println("Código de vendedor: " + this.getCodVendedor() + "\n");
+		System.out.println("Tarjeta Bonus: " +
+				this.getTarjetaBonus() + "\n");
 	}
+
 
 	@Override
 	public void registrarDatos() {
@@ -21,15 +23,15 @@ public class Vendedor extends Persona{
 		this.setDni(scan.nextLine());
 		System.out.print("Celular: ");
 		this.setCelular(scan.nextLine());
-		System.out.print("Código de Vendedor: ");
-		this.setCodVendedor(scan.nextLine());
+		System.out.print("Tarjeta Bonus: ");
+		this.setTarjetaBonus(scan.nextLine());
 	}
 
-	public String getCodVendedor() {
-		return codVendedor;
+	public String getTarjetaBonus() {
+		return tarjetaBonus;
 	}
 
-	public void setCodVendedor(String codVendedor) {
-		this.codVendedor = codVendedor;
+	public void setTarjetaBonus(String tarjetaBonus) {
+		this.tarjetaBonus = tarjetaBonus;
 	}
 }

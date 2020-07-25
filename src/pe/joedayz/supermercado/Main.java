@@ -1,15 +1,25 @@
-package pe.joedayz;
+package pe.joedayz.supermercado;
 
 import java.util.Scanner;
 
-import pe.joedayz.models.Cliente;
-import pe.joedayz.models.Persona;
-import pe.joedayz.models.Supermercado;
-import pe.joedayz.models.Vendedor;
+import pe.joedayz.supermercado.models.Cliente;
+import pe.joedayz.supermercado.models.Supermercado;
+import pe.joedayz.supermercado.models.Vendedor;
+import pe.joedayz.supermercado.views.MainView;
 
 public class Main {
 
     public static void main(String[] args) {
+		java.awt.EventQueue.invokeLater(new Runnable() {
+
+			@Override
+			public void run() {
+				new MainView().setVisible(true);
+			}
+		});
+	}
+
+	private static void supermercadoMain() {
 		Supermercado supermercado = new Supermercado();
 		Scanner scan = new Scanner(System.in);
 		while(true){
@@ -29,6 +39,7 @@ public class Main {
 					gestionVendedores(supermercado, scan);
 					break;
 				case 3:
+					gestionProductos(supermercado, scan);
 					break;
 				case 4:
 					break;
@@ -37,7 +48,39 @@ public class Main {
 					break;
 			}
 		}
-    }
+	}
+
+	private static void gestionProductos(Supermercado supermercado, Scanner scan) {
+		int opcion;
+		while (true) {
+			boolean retornar = false;
+			System.out.println("Seleccione una opción: \n"
+					+ "1.- Mostrar Productos\n"
+					+ "2.- Agregar Producto\n"
+					+ "3.- Borrar Producto\n"
+					+ "4.- Borrar todos los Productos\n"
+					+ "5.- Regresar\n");
+			opcion = scan.nextInt();
+			scan.nextLine();
+			switch(opcion){
+				case 1:
+					supermercado.mostrarProductos();
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 4:
+					break;
+				case 5:
+					retornar = true;
+					break;
+			}
+			if (retornar) {
+				break;
+			}
+		}
+	}
 
 	private static void gestionVendedores(Supermercado supermercado, Scanner scan) {
 		int opcion;
