@@ -21,5 +21,7 @@ public class MainView extends JFrame {
 	private void createUIComponents() {
 		tabMain.addTab("Clientes", new ClienteView().getClientePanel());
 		tabMain.addTab("Vendedores", new VendedorView().getVendedorPanel());
+		tabMain.addTab("Productos", new ProductosView().getProductosPanel());
+
 	}
 }
