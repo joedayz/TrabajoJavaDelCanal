@@ -69,16 +69,16 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="579c6" class="javax.swing.JButton" binding="button1" default-binding="true">
+              <component id="579c6" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
                 <constraints/>
                 <properties>
-                  <text value="Button"/>
+                  <text value="Guardar"/>
                 </properties>
               </component>
-              <component id="37d19" class="javax.swing.JButton" binding="button2" default-binding="true">
+              <component id="37d19" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
                 <constraints/>
                 <properties>
-                  <text value="Button"/>
+                  <text value="Cancelar"/>
                 </properties>
               </component>
             </children>
@@ -97,16 +97,16 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="a11f7" class="javax.swing.JButton" binding="button3" default-binding="true">
+          <component id="a11f7" class="javax.swing.JButton" binding="editarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Editar"/>
             </properties>
           </component>
-          <component id="a98d8" class="javax.swing.JButton" binding="button4" default-binding="true">
+          <component id="a98d8" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Eliminar"/>
             </properties>
           </component>
         </children>

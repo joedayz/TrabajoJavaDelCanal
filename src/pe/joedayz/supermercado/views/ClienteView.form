@@ -21,7 +21,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Documento"/>
             </properties>
           </component>
           <component id="41e4a" class="javax.swing.JTextField" binding="textField1" default-binding="true">
@@ -37,7 +37,7 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Nombre"/>
             </properties>
           </component>
           <component id="877cc" class="javax.swing.JTextField" binding="textField2" default-binding="true">
@@ -53,7 +53,7 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Apellido"/>
             </properties>
           </component>
           <component id="a7987" class="javax.swing.JTextField" binding="textField3" default-binding="true">
@@ -69,7 +69,7 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="Fecha de nacimiento"/>
             </properties>
           </component>
           <component id="a3eaf" class="javax.swing.JTextField" binding="textField4" default-binding="true">
@@ -87,16 +87,16 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="bc9bd" class="javax.swing.JButton" binding="button1" default-binding="true">
+              <component id="bc9bd" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
                 <constraints/>
                 <properties>
-                  <text value="Button"/>
+                  <text value="Guardar"/>
                 </properties>
               </component>
-              <component id="e3f58" class="javax.swing.JButton" binding="button2" default-binding="true">
+              <component id="e3f58" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
                 <constraints/>
                 <properties>
-                  <text value="Button"/>
+                  <text value="Cancelar"/>
                 </properties>
               </component>
             </children>
@@ -115,16 +115,16 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="1d76c" class="javax.swing.JButton" binding="button3" default-binding="true">
+          <component id="1d76c" class="javax.swing.JButton" binding="editarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Editar"/>
             </properties>
           </component>
-          <component id="e7772" class="javax.swing.JButton" binding="button4" default-binding="true">
+          <component id="e7772" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Eliminar"/>
             </properties>
           </component>
         </children>

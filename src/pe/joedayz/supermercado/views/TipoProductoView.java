@@ -1,19 +1,15 @@
 package pe.joedayz.supermercado.views;
 
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-public class ClienteView {
+public class TipoProductoView {
+	private JPanel tipoProductoPanel;
 
 	private JTextField textField1;
-
-	private JTextField textField2;
-
-	private JTextField textField3;
-
-	private JTextField textField4;
 
 	private JButton guardarButton;
 
@@ -25,9 +21,8 @@ public class ClienteView {
 
 	private JTable table1;
 
-	private JPanel clientePanel;
-
-	public JPanel getClientePanel() {
-		return clientePanel;
+	public JPanel getTipoProductoPanel() {
+		return tipoProductoPanel;
 	}
+
 }

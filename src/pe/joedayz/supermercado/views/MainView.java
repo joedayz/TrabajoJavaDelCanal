@@ -22,6 +22,8 @@ public class MainView extends JFrame {
 		tabMain.addTab("Clientes", new ClienteView().getClientePanel());
 		tabMain.addTab("Vendedores", new VendedorView().getVendedorPanel());
 		tabMain.addTab("Productos", new ProductosView().getProductosPanel());
+		tabMain.addTab("Tipo Producto", new TipoProductoView().getTipoProductoPanel());
+		tabMain.addTab("Venta", new VentaView().getVentaPanel());
 
 	}
 }
