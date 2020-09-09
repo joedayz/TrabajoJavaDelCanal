@@ -4,6 +4,8 @@ import pe.joedayz.supermercado.exception.PersistenceException;
 
 import java.sql.*;
 
+import javax.sql.DataSource;
+
 public class ConnectionManager {
 
     private static final String DRIVER = "com.mysql.jdbc.Driver";
@@ -28,39 +30,17 @@ public class ConnectionManager {
         }
     }
 
-    public static void closeAll(Connection conn){
-        try{
-            if(conn!=null){
-                conn.close();
-            }
-        }catch (Exception ex){
+	public static DataSource createDataSource(){
 
-        }
-    }
+		HikariDataSource hikariDs = new HikariDataSource();
+		hikariDs.setJdbcUrl("jdbc:mysql://localhost:3306/" + DATABASE);
+		hikariDs.setUsername(USER);
+		hikariDs.setPassword(PASSWORD);
 
-    public static void closeAll(Connection conn, Statement stmt){
-        try{
-            if(conn!=null){
-                conn.close();
-            }
-            if(stmt!=null){
-                stmt.close();
-            }
-        }catch (Exception ex){
+		DataSource proxyDataSource = ProxyDataSourceBuilder.create(hikariDs)
+				.logQueryToSysOut()
+				.build();
 
-        }
-    }
-
-    public static void closeAll(Connection conn, Statement stmt, ResultSet rs){
-        try{
-            if(conn!=null || stmt!=null){
-                closeAll(conn, stmt);
-            }
-            if(rs!=null){
-                rs.close();
-            }
-        }catch (Exception ex){
-
-        }
-    }
+		return proxyDataSource;
+	}
 }
