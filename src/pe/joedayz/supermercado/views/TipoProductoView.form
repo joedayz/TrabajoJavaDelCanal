@@ -24,7 +24,7 @@
               <text value="Nombre"/>
             </properties>
           </component>
-          <component id="4cb53" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="4cb53" class="javax.swing.JTextField" binding="txtNombre">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -39,13 +39,13 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="31cf3" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+              <component id="31cf3" class="javax.swing.JButton" binding="btnGuardar">
                 <constraints/>
                 <properties>
                   <text value="Guardar"/>
                 </properties>
               </component>
-              <component id="afd4f" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
+              <component id="afd4f" class="javax.swing.JButton" binding="btnCancelar">
                 <constraints/>
                 <properties>
                   <text value="Cancelar"/>
@@ -62,13 +62,13 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="7dfa0" class="javax.swing.JButton" binding="editarButton" default-binding="true">
+          <component id="7dfa0" class="javax.swing.JButton" binding="btnEditar">
             <constraints/>
             <properties>
               <text value="Editar"/>
             </properties>
           </component>
-          <component id="62a5d" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
+          <component id="62a5d" class="javax.swing.JButton" binding="btnEliminar">
             <constraints/>
             <properties>
               <text value="Eliminar"/>
@@ -76,7 +76,7 @@
           </component>
         </children>
       </grid>
-      <component id="6090a" class="javax.swing.JTable" binding="table1" default-binding="true">
+      <component id="6090a" class="javax.swing.JTable" binding="table_tipo_producto">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>

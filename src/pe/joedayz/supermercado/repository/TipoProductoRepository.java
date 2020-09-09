@@ -1,16 +1,16 @@
-package pe.joedayz.supermercado.dao;
+package pe.joedayz.supermercado.repository;
 
 import java.util.List;
 
 import pe.joedayz.supermercado.models.TipoProducto;
 
-public interface TipoProductoDAO {
+public interface TipoProductoRepository {
 
 	void save(TipoProducto tipoProducto);
 
 	void remove(TipoProducto tipoProducto);
 
-	List<TipoProducto> all();
+	List<TipoProducto> findAll();
 
 	TipoProducto findById(Integer id);
 
